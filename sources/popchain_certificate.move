@@ -68,36 +68,36 @@ public entry fun create_tier_from_bytes(
 public fun default_popchain_tiers(ctx: &mut TxContext): vector<Tier> {
     let mut tiers = vector::empty<Tier>();
     
-    // Tier 0: PopPass (0.1 SUI)
+    // Tier 0: PopPass (0.01 SUI)
     vector::push_back(&mut tiers, Tier {
         name: string::utf8(b"PopPass"),
         description: string::utf8(b"Proof of attendance certificate"),
-        url: new_unsafe_from_bytes(b"https://ktummovckegufdsuiikr.supabase.co/storage/v1/object/public/tiers/pop_pass.png"),
-        price: 100_000_000,  // 0.1 SUIC
+        url: new_unsafe_from_bytes(b"https://walrus.tusky.io/nzywCgr-PQkmnnp3hdQari9Olp_uc-QYmpc4cdO4P-o"),
+        price: 10_000_000,  // 0.01 SUIC
     });
     
-    // Tier 1: PopBadge (0.3 SUI)
+    // Tier 1: PopBadge (0.03 SUI)
     vector::push_back(&mut tiers, Tier {
         name: string::utf8(b"PopBadge"),
         description: string::utf8(b"Achievement or side quest badge"),
-        url: new_unsafe_from_bytes(b"https://ktummovckegufdsuiikr.supabase.co/storage/v1/object/public/tiers/pop_badge.png"),
-        price: 300_000_000,  // 0.3 SUI
+        url: new_unsafe_from_bytes(b"https://walrus.tusky.io/CmYARnNcHZoNL5kiZ7ISM86AEfho9zUYTJcTXJui8DM"),
+        price: 30_000_000,  // 0.03 SUI
     });
     
-    // Tier 2: PopMedal (0.5 SUI)
+    // Tier 2: PopMedal (0.05 SUI)
     vector::push_back(&mut tiers, Tier {
         name: string::utf8(b"PopMedal"),
         description: string::utf8(b"Recognition or distinction award"),
-        url: new_unsafe_from_bytes(b"https://ktummovckegufdsuiikr.supabase.co/storage/v1/object/public/tiers/pop_medal.png"),
-        price: 500_000_000,  // 0.5 SUI
+        url: new_unsafe_from_bytes(b"https://walrus.tusky.io/9Zg9oNmYzrIL9IfWkNGN8RiK6MVTAnoFYE7W1rLOaI0"),
+        price: 50_000_000,  // 0.05 SUI
     });
     
-    // Tier 3: PopTrophy (0.7 SUI)
+    // Tier 3: PopTrophy (0.07 SUI)
     vector::push_back(&mut tiers, Tier {
         name: string::utf8(b"PopTrophy"),
         description: string::utf8(b"VIP or sponsor honor NFT"),
-        url: new_unsafe_from_bytes(b"https://ktummovckegufdsuiikr.supabase.co/storage/v1/object/public/tiers/pop_trophy.png"),
-        price: 700_000_000,  // 0.7 SUI
+        url: new_unsafe_from_bytes(b"https://walrus.tusky.io/6vVBfxltZLyK-NcGUbEv0cm3Msq_0L2M_Y6U8AhBCz8"),
+        price: 70_000_000,  // 0.07 SUI
     });
     
     tiers
